@@ -5,6 +5,9 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+}
+
+a {
   color: #212121;
 }
 
@@ -37,6 +40,7 @@
   padding: 48px 0 40px 0;
 }
 .header-row-1 .logo {
+  color: #212121;
   font-size: 25px;
   font-weight: 700;
 }
@@ -129,7 +133,7 @@
           justify-content: space-between;
   color: #212121;
 }
-.our-serv .all-services .service {
+.our-serv .service {
   background-color: #fff;
   text-align: center;
   padding: 60px 0 60px 0;
@@ -137,40 +141,40 @@
   -webkit-transition: .2s;
   transition: .2s;
 }
-.our-serv .all-services .service:hover {
+.our-serv .service:hover {
   background-color: #00897b;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.35);
           box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.35);
 }
-.our-serv .all-services .service:hover .serv-change-color {
+.our-serv .service:hover .serv-change-color {
   color: #fff;
 }
-.our-serv .all-services .service:hover .cursor {
+.our-serv .service:hover .cursor {
   visibility: visible;
 }
-.our-serv .all-services .service h3 {
+.our-serv .service h3 {
   margin: 20px 0 20px 0;
 }
-.our-serv .all-services .service p {
+.our-serv .service p {
   max-width: 265px;
   margin: 0 auto 60px auto;
 }
-.our-serv .all-services .service a {
+.our-serv .service a {
   border: 2px solid #212121;
   padding: 12px 16px;
   font-weight: 600;
   outline: none;
 }
-.our-serv .all-services .service a:hover {
+.our-serv .service a:hover {
   color: #fff;
   border: 2px solid #fff;
 }
-.our-serv .all-services .service a:focus {
+.our-serv .service a:focus {
   background-color: #00897b;
   border: 2px solid #00897b;
   color: #fff;
 }
-.our-serv .all-services .service .cursor {
+.our-serv .service .cursor {
   position: relative;
   top: 45px;
   right: 22%;
@@ -208,4 +212,106 @@
 .latest-works-navigation .latest-works-menu a:hover, .latest-works-navigation .latest-works-menu a:focus {
   background-color: #00897b;
   color: #fff;
+}
+
+.latest-works-gallery {
+  margin-top: 130px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 120px;
+}
+.latest-works-gallery .working {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  max-width: 370px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  transition: 1s;
+  text-align: center;
+}
+.latest-works-gallery .working img {
+  position: relative;
+}
+.latest-works-gallery .working .description {
+  color: #fff;
+  line-height: 20px;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+.latest-works-gallery .working::before {
+  background-color: rgba(0, 0, 0, 0.7);
+  content: '';
+  bottom: 0;
+  max-height: 100%;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.latest-works-gallery .working:hover::before {
+  opacity: 1;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+.latest-works-gallery .working:hover .description {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  visibility: visible;
+  z-index: 2;
+}
+.latest-works-gallery .link-view-all {
+  background-color: #00897b;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+.latest-works-gallery .view-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 110px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.latest-works-gallery .view-all a {
+  border: 2px solid #00897b;
+}
+.latest-works-gallery .view-all a:hover {
+  background-color: #fff;
+  color: #00897b;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.pricing-plan {
+  background-color: #f0f1f1;
+  padding-top: 120px;
+}
+.pricing-plan .pricing-plan-title {
+  text-align: center;
 }
