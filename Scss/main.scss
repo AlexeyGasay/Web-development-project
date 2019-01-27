@@ -1,0 +1,240 @@
+// fonts
+@import 'colors';
+@import 'fonts';
+
+// common styles
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: $base-color;
+}
+
+.title-h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.title-p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 auto;
+    max-width: 620px;
+}
+
+
+// beginning of styles for header
+
+
+.header-row-1 {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    padding: 48px 0 40px 0;
+
+    
+    .logo {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    .main-nav ul {
+        display: flex;
+        
+        a {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 22px;
+            margin: 0 25px;
+            outline: none;
+            transition: .2s;
+            
+            
+            &:hover,
+            &:focus {
+                border-radius: 5px;
+                color: $contrast-color;
+            }
+            
+        } // /a
+         
+    } // /ul 
+            
+} // /header-row-1
+
+
+
+.header-row-2 {
+    position: relative;
+    background-image: url(../img/header/banner-bg.jpg);
+    background-size: cover;
+    min-height: 655px;
+    
+    .title {
+        margin: 0 auto;
+        padding: 180px 0 0 0;
+        text-align: center;
+        
+        h1 {
+            color: $white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 60px;
+        }
+        
+        h2 {
+            color: $white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 125px;
+        }
+        
+        a {
+            border: 3px solid $white;
+            color: $white;
+            font-family: 'Roboto', sans-serif;
+            padding: 20px 25px;
+            margin: 0 25px;
+            outline: none;
+            transition: .2s;
+            
+            
+            &:hover,
+            &:focus {
+                border: 3px solid $contrast-color;
+                background: $contrast-color;
+            }
+        }
+        
+    }
+     
+}
+
+
+
+
+// Beginning About Us
+.container-ab-us {
+    margin-top: 120px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    
+    .ab-us-info {
+        display: flex;
+        margin-bottom: 120px;
+    }
+    
+    .ab-us-title {
+        margin-bottom: 120px;
+    }
+}
+// End of about us
+
+
+
+// Beginning of Our Services
+.our-serv {
+    background-color: $bg-color-block;
+    font-family: 'Open Sans', sans-serif;
+    
+    .our-serv-title {
+        text-align: center;
+        padding-top: 150px;
+    }
+    
+    .all-services {
+        padding-top: 115px;
+        justify-content: space-between;
+        color: $base-color;
+        .service {
+            background-color: $white;
+            text-align: center;
+            padding: 60px 0 60px 0;
+            max-width: 370px;
+            
+            &:hover {
+                 background-color: $contrast-color;
+            }
+            
+            &:hover .cursor {
+                visibility: visible;
+            }
+            
+            h3 {
+                margin: 20px 0 20px 0;
+            }
+            
+            p {
+                max-width: 265px;
+                margin: 0 auto 60px auto;
+            }
+            
+            a {
+                border: 2px solid $base-color;
+                padding: 12px 16px;
+                font-weight: 600;
+                
+                &:hover {
+                    color: $white;
+                    border: 2px solid $white;
+                }
+            }
+            
+            .cursor {
+                position: relative;
+                top: 45px;
+                right: 22%;
+                visibility: hidden;
+            }
+            
+        }
+    }
+    
+    .our-serv-row-2 {
+        padding-top: 20px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
