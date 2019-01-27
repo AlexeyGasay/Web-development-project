@@ -14,7 +14,7 @@
 .title-h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .title-p {
@@ -142,6 +142,7 @@
 .our-serv {
     background-color: $bg-color-block;
     font-family: 'Open Sans', sans-serif;
+    padding-bottom: 120px;
     
     .our-serv-title {
         text-align: center;
@@ -152,15 +153,24 @@
         padding-top: 115px;
         justify-content: space-between;
         color: $base-color;
+        
         .service {
             background-color: $white;
             text-align: center;
             padding: 60px 0 60px 0;
             max-width: 370px;
+            transition: .2s; 
+            
             
             &:hover {
-                 background-color: $contrast-color;
+                background-color: $contrast-color;
+                box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.35);
             }
+            
+            &:hover .serv-change-color {
+                color: $white;
+            }
+            
             
             &:hover .cursor {
                 visibility: visible;
@@ -179,10 +189,18 @@
                 border: 2px solid $base-color;
                 padding: 12px 16px;
                 font-weight: 600;
+                outline: none;
                 
-                &:hover {
+                &:hover
+                {
                     color: $white;
                     border: 2px solid $white;
+                }
+                
+                &:focus {
+                    background-color: $contrast-color;
+                    border: 2px solid $contrast-color;
+                    color: $white;
                 }
             }
             
@@ -201,11 +219,48 @@
     }
     
 }
+// /Our Services
 
 
 
 
 
+
+// Beginning of Latest Works
+
+.latest-works {
+    margin-top: 120px;
+    
+    .latest-works-title {
+        text-align: center;
+    }    
+}
+
+.latest-works-navigation {
+    margin: 115px auto 0 auto;
+    
+    
+    .latest-works-menu {
+        display: flex;
+        
+        a {
+            border: 2px solid $contrast-color;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            margin: 0 20px;
+            outline: none;
+            padding: 12px 22px;
+            transition: .2s;
+            
+            &:hover,
+            &:focus {
+                background-color: $contrast-color;
+                color: $white;
+                
+            }
+        }
+    }
+}
 
 
 
