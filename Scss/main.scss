@@ -165,7 +165,7 @@ a {
 
 // Beginning of Our Services
 .our-serv {
-    background-color: $bg-color-our-serv;
+    background-color: $bg-color-our-green;
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 120px;
     
@@ -605,7 +605,16 @@ a {
 
 
 
+// Beginning of Blog
 
+.blog {
+    background-color: $bg-color-our-green;
+}
+
+.blog-title {
+    text-align: center;
+    padding-top: 120px;
+}
 
 
 

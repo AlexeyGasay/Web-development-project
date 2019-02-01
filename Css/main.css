@@ -510,3 +510,12 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
 }
+
+.blog {
+  background-color: #e4fdf9;
+}
+
+.blog-title {
+  text-align: center;
+  padding-top: 120px;
+}
