@@ -261,6 +261,8 @@ a {
 }
 .latest-works-gallery .working img {
   position: relative;
+  width: 100%;
+  height: auto;
 }
 .latest-works-gallery .working .description {
   color: #fff;
@@ -406,4 +408,105 @@ a {
   color: #fff;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+.our-team {
+  font-family: 'Open Sans', sans-serif;
+  margin: 120px auto 0 auto;
+  padding-bottom: 120px;
+}
+.our-team .our-team-title {
+  text-align: center;
+}
+
+.our-team-member {
+  margin-top: 130px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icon-member-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+}
+.icon-member-box img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.icon-member {
+  opacity: .3;
+  text-align: center;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.our-team-info {
+  display: none;
+  text-align: center;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.our-team-info img {
+  border-radius: 10px;
+}
+.our-team-info h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.our-team-info p {
+  font-size: 15px;
+}
+.our-team-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0 0 0;
+}
+.our-team-info ul li {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-radius: 5px;
+  margin: 0 10px;
+  max-height: 40px;
+  min-width: 50px;
+  padding: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.our-team-info ul li:hover {
+  background-color: #f0f1f1;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#our-team-switch-1:checked ~ .our-team .our-team-member .member-1,
+#our-team-switch-2:checked ~ .our-team .our-team-member .member-2,
+#our-team-switch-3:checked ~ .our-team .our-team-member .member-3 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+}
+
+#our-team-switch-1:checked ~ .our-team .our-team-member .our-team-info-box .team-info-1,
+#our-team-switch-2:checked ~ .our-team .our-team-member .our-team-info-box .team-info-2,
+#our-team-switch-3:checked ~ .our-team .our-team-member .our-team-info-box .team-info-3 {
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
 }

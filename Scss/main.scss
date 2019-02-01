@@ -314,6 +314,8 @@ a {
         
         img {
             position: relative;
+            width: 100%;
+            height: auto;
         }
         
         .description {
@@ -472,8 +474,6 @@ a {
         padding: 15px 30px;
         transition: .2s;
         
-        
-        
         &:hover,
         &:focus {
             border: 1px solid $contrast-color;
@@ -484,6 +484,177 @@ a {
     }
     
 }// /plans
+
+
+
+
+
+// Beginning of Our Team Member
+
+.our-team {
+    font-family: 'Open Sans', sans-serif;
+    margin: 120px auto 0 auto;
+    padding-bottom: 120px;
+    
+    .our-team-title {
+        text-align: center;
+    }
+}
+
+
+.our-team-member {
+    margin-top: 130px;
+    justify-content: space-between;
+    
+}
+
+
+.icon-member-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    
+        
+    img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+.icon-member {
+    opacity: .3;
+    text-align: center;
+    transform: scale(.5);
+    transition: 1s;
+    
+}
+
+
+
+.our-team-info {
+    display: none;
+    text-align: center;
+    transition: 2s;
+    
+    img {
+        border-radius: 10px;
+    }
+        
+    h3 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+        
+    p {
+        font-size: 15px;
+    }
+        
+    ul {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 0 0;
+        
+        
+        li {
+            align-items: flex-end;
+            border-radius: 5px;
+            margin: 0 10px;
+            max-height: 40px;
+            min-width: 50px;
+            padding: 5px;
+            transition: .3s;
+            
+            &:hover {
+                background-color: #f0f1f1;
+                color: $white;
+                transition: .3s;
+            }
+ 
+          
+        }
+    }
+}// /our-team-info
+
+
+
+
+
+#our-team-switch-1:checked ~ .our-team .our-team-member .member-1, 
+#our-team-switch-2:checked ~ .our-team .our-team-member .member-2, 
+#our-team-switch-3:checked ~ .our-team .our-team-member .member-3 {
+    opacity: 1;
+    transform: scale(1);
+    transition: 1.4s;
+}
+
+ 
+#our-team-switch-1:checked ~ .our-team .our-team-member .our-team-info-box .team-info-1,
+#our-team-switch-2:checked ~ .our-team .our-team-member .our-team-info-box .team-info-2,
+#our-team-switch-3:checked ~ .our-team .our-team-member .our-team-info-box .team-info-3 {
+    display: block;
+    transition: 1s;
+    
+}
+
+// /Our Team Member
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
