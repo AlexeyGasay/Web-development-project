@@ -318,8 +318,9 @@ a {
 }
 .latest-works-gallery .view-all a {
   border: 2px solid #00897b;
+  outline: none;
 }
-.latest-works-gallery .view-all a:hover {
+.latest-works-gallery .view-all a:hover, .latest-works-gallery .view-all :focus {
   background-color: #fff;
   color: #00897b;
   -webkit-transition: .2s;
@@ -513,9 +514,187 @@ a {
 
 .blog {
   background-color: #e4fdf9;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 90px;
 }
 
 .blog-title {
   text-align: center;
   padding-top: 120px;
+}
+
+.article-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.articles {
+  margin-top: 120px;
+}
+
+.articles-poster img {
+  width: 100%;
+  height: auto;
+}
+
+.article-title {
+  padding-top: 40px;
+}
+.article-title .datetime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 250px;
+}
+.article-title .datetime img {
+  margin-right: 10px;
+}
+.article-title h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.article-title h3 a {
+  -webkit-transition: .3s;
+  transition: .3s;
+  outline-color: #00897b;
+}
+.article-title h3 a:hover, .article-title h3 a:focus {
+  color: #00897b;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.article p {
+  max-width: 455px;
+}
+
+.more-view {
+  text-align: center;
+  margin-top: 120px;
+  padding-bottom: 30px;
+}
+.more-view a {
+  background-color: #00897b;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  outline: none;
+  padding: 20px 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.more-view a:hover, .more-view a:focus {
+  background-color: #fff;
+  color: #00897b;
+  border: 2px solid #00897b;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact-us {
+  background-image: url(../img/contact-us/bg-footer.jpg);
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-us-title {
+  color: #fff;
+  padding: 120px 0 0 0;
+  text-align: center;
+}
+.contact-us-title h2 {
+  font-size: 30px;
+}
+.contact-us-title p {
+  font-size: 15px;
+  margin: 30px auto 0 auto;
+  max-width: 620px;
+}
+
+.our-data {
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+.our-data ul {
+  margin-top: 20px;
+}
+
+.contact-form {
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+
+.contats-us-form {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.block-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+}
+.block-input input {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  min-height: 60px;
+  text-align: left;
+  outline-color: #00897b;
+  padding: 0 0 0 30px;
+  width: 49%;
+}
+
+.contact-us-massage {
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 30px;
+  max-height: 325px;
+  outline-color: #00897b;
+  padding: 30px 0 0 30px;
+  resize: none;
+  width: 100%;
+}
+
+.send-massage {
+  text-align: right;
+  margin-top: 15px;
+}
+.send-massage button {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  width: 200px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.send-massage button:hover, .send-massage button:focus {
+  background: #00897b;
+  color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.copyright {
+  background-color: #fff;
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 0;
+  text-align: center;
 }

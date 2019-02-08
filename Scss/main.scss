@@ -375,9 +375,10 @@ a {
 
         a {
             border: 2px solid $contrast-color; 
+            outline: none;
         }
         
-        a:hover {
+        a:hover, :focus {
             background-color: $white;
             color: $contrast-color;
             transition: .2s;
@@ -609,6 +610,8 @@ a {
 
 .blog {
     background-color: $bg-color-our-green;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 90px;
 }
 
 .blog-title {
@@ -616,31 +619,209 @@ a {
     padding-top: 120px;
 }
 
+.article-row {
+    display: flex;
+    padding: 0;
+}
+
+
+.articles {
+    margin-top: 120px;
+}
+
+.articles-poster {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.article-title {
+    padding-top: 40px;
+    
+    .datetime {
+        display: flex;
+        justify-content: space-between;
+        max-width: 250px;
+        
+        img {
+            margin-right: 10px;
+        }
+    }
+    
+    h3 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        
+        a {
+            transition: .3s;
+            outline-color: $contrast-color;
+            
+            &:hover,
+            &:focus {
+                color: $contrast-color;
+                transition: .3s;
+            }
+        }// /a
+        
+    }// /h3
+    
+}// /article-title
+
+.article {
+    p {
+        max-width: 455px;
+    }
+    
+}// /article
 
 
 
+.more-view {
+    text-align: center;
+    margin-top: 120px;
+    padding-bottom: 30px;
+    
+    a {
+        background-color: $contrast-color;
+        color: $white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+        outline: none;
+        padding: 20px 50px;
+        transition: .5s;
+        
+        &:hover,
+        &:focus {
+            background-color: $white;
+            color: $contrast-color;
+            border: 2px solid $contrast-color;
+            transition: .3s;
+        }
+        
+    }
+}
+
+// /blog
 
 
 
+// Beginning of Contact Us
+
+.contact-us {
+    background-image: url(../img/contact-us/bg-footer.jpg);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.contact-us-title {
+    color: $white;
+    padding: 120px 0 0 0;
+    text-align: center;
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 15px;
+        margin: 30px auto 0 auto;
+        max-width: 620px;
+    }
+}
+
+
+.our-data {
+    color: $white;
+    text-align: center;
+    margin-top: 100px;
+    
+    ul {
+        margin-top: 20px;
+    }
+}
+
+
+.contact-form {
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+.contats-us-form {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+
+.block-input {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    
+    input {
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        min-height: 60px;
+        text-align: left;
+        outline-color: $contrast-color;
+        padding: 0 0 0 30px;
+        width: 49%;
+
+    }
+}
+
+
+.contact-us-massage {
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 30px;
+    max-height: 325px;
+    outline-color: $contrast-color;
+    padding: 30px 0 0 30px;
+    resize: none;
+    width: 100%;
+    
+}
+
+
+.send-massage {
+    text-align: right;
+    margin-top: 15px;
+    
+    button {
+        background: $white;
+        border: none;
+        border-radius: 10px;
+        color: $base-color;
+        font-size: 16px;
+        font-weight: 600;
+        height: 50px;
+        width: 200px;
+        transition: .4s;
+        
+        &:hover,
+        &:focus {
+            background: $contrast-color;
+            color: $white;
+            transition: .4s;
+        }
+    }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.copyright {
+    background-color: $white;
+    color: $base-color;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+    text-align: center;
+}
 
 
 
