@@ -683,6 +683,7 @@ a {
   width: 200px;
   -webkit-transition: .4s;
   transition: .4s;
+  outline: none;
 }
 .send-massage button:hover, .send-massage button:focus {
   background: #00897b;
