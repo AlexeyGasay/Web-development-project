@@ -15,10 +15,7 @@ a {
     color: $base-color;
 }
 
-//img {
-//    width: 100%;
-//    height: auto;
-//}
+
 
 .title-h2 {
     font-family: 'Open Sans', sans-serif;
@@ -34,6 +31,28 @@ a {
     line-height: 22px;
     margin: 0 auto;
     max-width: 620px;
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        transition: .7s;
+        margin: 0 auto;
+        min-width: 100%;
+    }
+    
+    .row {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .row {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 
 
@@ -822,6 +841,8 @@ a {
     font-family: 'Roboto', sans-serif;
     padding: 10px 0;
     text-align: center;
+    margin: 100px 0 0 0;
+    
 }
 
 
